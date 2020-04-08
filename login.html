@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js"></script>
+</head>
+<body>
+
+       <!--Navbar-->
+
+       <div class="header my_nav">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="navbar-brand"><h3>Talent Expo</h3></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!--Login form-->
+    <section>
+    <div class="row ">
+        <div class="col-lg-3 mx-auto pt-3 loginbox">            
+            <div class="card mt-5 " >               
+                <div class="card-tittle text-center mt-2">
+                    <img src="avatar.png" width="150px" height="150px">
+                </div>
+                <div class="card-body text text-center ">                  
+                    <div id="error_message"></div>
+                    <form id="my_form" onsubmit="return validation()">
+                    <div class="input-form mb-3 ">                                              
+                        <label for="username"><b>Username</b></label><br>                        
+                        <input type="text" id="uname" name="username" placeholder="Username">
+                    </div>
+                    <div class="input-form mb-3">
+                        <label for="email"><b>Email</b></label><br>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="input-form mb-3">
+                        <label for="psswrd"><b>Password</b></label><br>
+                        <input type="password" id="pword" name="psswrd" placeholder="Password">
+                    </div>
+                    <div class="input-form mb-3">
+                        <label for="cnfrmpsswrd"><b>Confirm Password</b></label><br>
+                        <input type="password" id="cpword" name="cnfrmpsswrd" placeholder="Confirm Password">
+                    </div>                   
+                    <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" class="custom-control-input" id="customcheck" name="example1">
+                        <label class="custom-control-label" for="customcheck">Save Password</label>
+                    </div>                   
+                    <div class="input-form mb-3 text-center">
+                        <button type="submit" class="btn btn-success"><b>Submit</b></button>
+                    </div>
+                    </form>
+                </div>
+            </div>                      
+        </div>
+    </div>
+    </section>
+
+    <!--Background Image-->
+
+  
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+section
+{
+    background: url("bg6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(150vh - -10px);
+}
+.loginbox
+{
+    opacity: 0.8;
+}
+.my_nav
+{
+    opacity: 1.5;
+}
+#error_message
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: red;
+    text-align: center;
+    font-size: 14px;
+    color:white;
+    transition: all 0.5s ease;
+}
